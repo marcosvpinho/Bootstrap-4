@@ -1,26 +1,21 @@
 {
-  "name": "development-with-react",
+  "name": "confusion",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
-
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite":"lite-server"
+    "lite": "lite-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marcosvpinho/Development-with-React.git"
-  },
-  "author": "Marcos Pinho",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/marcosvpinho/Development-with-React/issues"
+  "devDependencies": {
+    "lite-server": "^2.3.0"
   },
-  "homepage": "https://github.com/marcosvpinho/Development-with-React#readme",
   "dependencies": {
-    "lite-server": "^2.4.0",
-    "save-dev": "^2.0.0"
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
   }
 }
