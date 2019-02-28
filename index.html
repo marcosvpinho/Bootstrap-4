@@ -30,9 +30,7 @@
 					<li class="nav-item"> <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a> </li>
 				</ul>
 				<span class="navbar-text"> 
-					<a data-toggle="modal" data-target="#loginModal">
-						<span class="fa fa-sign-in"> Login</span>
-					</a>
+					<button id="loginButton" type="button" class="fa fa-sign-in" style="background: #512DA8; color: white; border: 0px;"> Login</button>
 				</span>
 			</div>
 		</div>
@@ -122,7 +120,7 @@
                                 </div>
                             </div>
                             <div class="offset-md-2 col-md-10">
-                                <button type="button" class="btn btn-basic" data-dismiss="modal">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                     Cancel
                                 </button>
                                 <button type="submit" class="btn btn-primary">
@@ -149,7 +147,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                	<a role="button" data-toggle="modal" data-target="#reserveModal"  class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true" title="Or Call Us at <br><strong>+554832470830</strong>" data-placement="bottom">Reserve Table</a>     
+                	<a role="button" id="reserveButton" class="btn btn-block nav-link btn-warning" data-html="true" title="Or Call Us at <br><strong>+554832470830</strong>" data-placement="bottom">Reserve Table</a>     
                 </div>
             </div>
         </div>
@@ -318,6 +316,18 @@
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
+            });
+        });
+
+        $(document).ready(function(){
+            $("#loginButton").click(function(){
+                $("#loginModal").modal('toggle');
+            });
+        });
+
+        $(document).ready(function(){
+            $("#reserveButton").click(function(){
+                $("#reserveModal").modal('toggle');
             });
         });
     </script>
